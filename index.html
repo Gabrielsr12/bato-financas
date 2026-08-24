@@ -291,10 +291,10 @@
   // ---- Supabase config ----
   // Cole aqui a URL e a chave "anon public" do seu projeto Supabase
   // (Configurações do projeto > API, em supabase.com/dashboard)
-  var SUPABASE_URL = "COLE_AQUI_SUA_SUPABASE_URL";
-  var SUPABASE_ANON_KEY = "COLE_AQUI_SUA_SUPABASE_ANON_KEY";
+  var SUPABASE_URL = "sb_publishable_BNK5WxDBQqpNyoetccxWeg_sbOMznBT";
+  var SUPABASE_ANON_KEY = "sb_secret_-BFTwFx8A9w-uM6YVT2PPg_j3bBR8Q0";
   var sb = null;
-  var dbReady = SUPABASE_URL.indexOf("COLE_AQUI") === -1 && SUPABASE_ANON_KEY.indexOf("COLE_AQUI") === -1;
+  var dbReady = SUPABASE_URL.indexOf("sb_publishable_BNK5WxDBQqpNyoetccxWeg_sbOMznBT") === -1 && SUPABASE_ANON_KEY.indexOf("sb_secret_-BFTwFx8A9w-uM6YVT2PPg_j3bBR8Q0") === -1;
   if (dbReady && window.supabase) {
     sb = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
   }
